@@ -1,6 +1,5 @@
 package org.deloys.three.org.deploys.three.lessons.lesson03.homework
 
-import java.sql.Date
 
 // 1. Название мероприятия (неизменяемая публичная переменная известная на момент написания)
 val name: String = "Monster Hackaton"
@@ -16,7 +15,7 @@ var placeEvent: String = "Petrograd"
 private val detaileBudget: String = "Detail info about event budget"
 
 // 5. Количество участников (публичная переменная, известная на момент написания, но может быть изменена)
-var participantsCount: Int = 150
+var participantsCount: Int = 0
 
 // 6. Длительность хакатона (публичная, известна на момент написания, может измениться)
 var hackathonDuration: Int = 8
@@ -25,7 +24,7 @@ var hackathonDuration: Int = 8
 private val suppliersContacts: String = "This is a contract"
 
 // 8. Текущее состояние хакатона (статус)
-var status: Boolean = false
+var status: String = "No started"
 
 // 9. Список спонсоров
 val sponsors: String = "1XBet"
@@ -40,18 +39,16 @@ var wifi: Boolean = false
 private var logisticsInfo: String = "Internal communication"
 
 // 13. Количество команд
-val numberTeams: Int = 10
+var numberTeams: Int = 0
 
 // 14. Перечень задач
-lateinit var tasksList: String
+val tasksList: String = "All tasks"
 
 // 15. План эвакуации
-val evacuationPlan: String by lazy {
-    "Alarm"
-}
-
+var evacuationPlan: String = "Alarm plan"
+    private set
 // 16. Список доступного оборудования (всё, что выделено для использования на мероприятии)
-private val allEnviromentList: String = "two paks grass"
+val allEnviromentList: String = "two paks grass"
 
 // 17. Список свободного оборудования (всё, что можно взять прямо сейчас и что не занято другими участниками)
 lateinit var freeEnviromentList: String
@@ -66,7 +63,7 @@ private val sparePlan: String by lazy {
 
 // 20. Список экспертов и жюри
 var expertsAndJury: String = "Woman-cat, Matthew, Houston, Jeanne"
-
+    private set
 // 21. Политика конфиденциальности
 val privacyPolicy: String = "Privat Policy"
 
