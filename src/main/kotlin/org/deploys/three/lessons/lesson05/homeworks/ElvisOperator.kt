@@ -8,7 +8,7 @@ fun main () {
 // пропорциональна начальной интенсивности, умноженной на коэффициент затухания.
 // Если коэффициент затухания неизвестен, использовать стандартное значение 0.5.
 
-    val initSoundIntensive: Double = 1.05
+    val initSoundIntensive: Double = 58.0
     val soundAttenuationCaf: Double? = 0.11
     val defaultAttenuationCaf: Double = 0.5
     val soundIntensiveAfterAttenuation = initSoundIntensive * (soundAttenuationCaf ?: defaultAttenuationCaf)
@@ -34,7 +34,7 @@ fun main () {
 // которое должно быть зафиксировано. Лаборант приносит вам набор показателей, но по пути может что-нибудь потерять.
 // Задача - сообщить об ошибке в случае отсутствия показаний атмосферного давления.
 
-    val atmosphericPressure: Any? = 375.0
+    val atmosphericPressure: String? = "756.0"
     val lostPressureMetric: String = "Lost the pressure metric!"
     val pressureInLab = atmosphericPressure ?: lostPressureMetric
     println(pressureInLab)
