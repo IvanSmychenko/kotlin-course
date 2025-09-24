@@ -51,8 +51,8 @@ fun ageCalculation(age: Int) {
 
 fun methodMovement(distance: Double) {
     when (distance) {
-        in 0.0..1.0 -> println("пешком")
-        in 1.1..5.0 -> println("велосипед")
+        in 0.0 ..< 1.0 -> println("пешком")
+        in 1.0..5.0 -> println("велосипед")
         else -> println("автотранспорт")
     }
 }
