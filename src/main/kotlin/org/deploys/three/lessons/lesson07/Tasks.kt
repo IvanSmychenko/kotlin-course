@@ -7,11 +7,13 @@ fun main() {
             println(i*i)
         }
     }
+    print("====================\n")
 
     val length: Int = 34
     for (i in 0 until length) {
         println(i)
     }
+    print("====================\n")
 
     var counter: Int = 0
     var sum: Int = 0
@@ -20,6 +22,7 @@ fun main() {
         counter++
     }
     println(sum)
+    print("====================\n")
 
     var counter2: Int = 0
     var sum2: Int = 0
@@ -28,17 +31,20 @@ fun main() {
         sum2+=counter2
         println(sum2)
     } while ((sum2 + counter2) <= 50)
+    print("====================\n")
 
     var counter3: Int = 1
     while (true) {
         println(counter3)
         if (counter3++ % 7 == 0) break
     }
+    print("====================\n")
 
     for (i in 1..10) {
         if (i == 3 || i == 7) continue
         println(i)
     }
+    print("====================\n")
 
     var counter4: Int = 0
     for (i in 20 downTo 1) {
@@ -49,4 +55,5 @@ fun main() {
         }
         println(i)
     }
+    print("====================\n")
 }
