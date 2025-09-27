@@ -1,4 +1,4 @@
-package org.deloys.three.org.deploys.three.lessons.lesson07
+package org.deloys.three.org.deploys.three.lessons.lesson07.homeworks
 
 fun main() {
 
